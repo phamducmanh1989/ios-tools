@@ -18,13 +18,12 @@
     {
          [[self class] autoGenerateModel:invocation];
     }
-   
+
     completionHandler(nil);
 }
 + (void)autoGenerateModel:(XCSourceEditorCommandInvocation *)invocation
 {
     NSMutableArray * selections = [NSMutableArray array];
-    
     for ( XCSourceTextRange *range in invocation.buffer.selections )
     {
         for ( NSInteger i = range.start.line; i <= range.end.line ; i++)

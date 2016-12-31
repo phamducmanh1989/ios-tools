@@ -16,4 +16,5 @@
  @return base string model define
  */
 - (NSString*)generateModel;
+- (NSString*)convertToCamelCase;
 @end

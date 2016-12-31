@@ -26,10 +26,13 @@
 
 - (void)testGenerateModel {
     
-    NSString *__input = @"{\
+    NSString *__input =
+    @"#name DEMO\
+      #type Camel\
+      {\
         \"pi\": 3.141,\
         \"happy\": true,\
-        \"name\": \"Niels\",\
+        \"my_name\": \"Niels\",\
         \"nothing\": null,\
         \"answer\": {\
             \"everything\": 42\
@@ -39,8 +42,7 @@
             \"currency\": \"USD\",\
             \"value\": 42.99\
         }\
-    }";
-
+      }";
     NSString *__output = [__input generateModel];
 }
 
