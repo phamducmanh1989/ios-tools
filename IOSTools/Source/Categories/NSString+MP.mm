@@ -24,7 +24,7 @@ enum GenerateType{
 @implementation NSString (MP)
 - (NSString*)generateModel{
     enum GenerateType type = [self getGenerateType];
-    NSString *className = [self getClassName];
+    NSString *className = [[self getClassName] stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     
     json j_stream;
     try {
