@@ -5,7 +5,16 @@
 2. Check System Preferences -> Extensions -> Xocde Source Editor -> MP Tools
 
 ## Usage
+```javascript
+#name class_name
+#type Camel | Underscored
+{
+  ......
+}
+```
 ![alt text](http://image.prntscr.com/image/8aa9c75fb2b34ac199b88464f65d47af.png)
+
+
 
 ## Contributing
 1. Fork it!
