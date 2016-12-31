@@ -78,7 +78,7 @@ enum GenerateType{
             if (__token) {
                 [ret setString:[ret stringByReplacingOccurrencesOfString:__token withString:[__token substringToIndex:__token.length - 1]]];
             }
-            [ret appendString:APPEND_NEWLINE(@"\t\t}")];
+            [ret appendString:APPEND_NEWLINE(@"\t\t}];")];
             [ret appendString:APPEND_NEWLINE(@"}")];
         }
         [ret appendString:APPEND_NEWLINE(@"+ (BOOL)propertyIsOptional:(NSString *)propertyName {")];
